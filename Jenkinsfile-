@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out source code'
+                echo 'Checking out source code b1'
                 checkout scm
             }
         }
@@ -17,21 +17,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build process started'
-                echo 'Build completed'
+                echo 'Build completed b1'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Testing application'
-                echo 'Testing completed'
+                echo 'Testing completed b1'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying application'
-                echo 'Deployment completed'
+                echo 'Deployment completed b1'
             }
         }
     }
